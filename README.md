@@ -46,7 +46,7 @@ cd iam-simulation
 - EC2アクション一覧: `actions/ec2_all_actions.json`
 - S3アクション一覧: `actions/s3_all_actions.json`
 
-#　ツールの実行
+### ツールの実行
 ```shell
 ./simulate_iampolicy.py [-h] [-P PROFILE] [-c] -p POLICY_SOURCE_ARN -a ACTION_LIST_FILE
 ```
@@ -69,7 +69,7 @@ cd iam-simulation
 ./simulate_iampolicy.py -P Hoge -c -p 'arn:aws:iam::999999999999:user/UserName' -a 'actions/s3_all_actions.json'
 ```
 
-#　実行結果
+### 実行結果
 - JSON形式
 ```JSON
 [
