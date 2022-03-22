@@ -1,6 +1,8 @@
 # iam-simulation
 ## 概要
 <img src="./Documents/outline_figure.svg" width=600></img>
+
+
 本ツールは[IAM Policy simulator](https://policysim.aws.amazon.com/)を利用し対象とするIAMユーザ/グループ/ロールに対して指定したIAMアクションのが許可されるか否かを評価し、結果をJSONまたはCVS形式で出力するツールです。
 
 コンソールでも[IAM Policy simulator](https://policysim.aws.amazon.com/)は利用可能ですが、評価対象のActionをGUIで選択する手間があること、評価結果をファイルに出力することができないこと、などがネックとなりますが本ツールを利用することでこれらの悩みを解消することができます。
@@ -37,7 +39,7 @@ cd iam-simulation
 }
 ```
 アクション一覧の作成には、マネージメントコンソールのIAMポリシー作成時のビジュアルエディタを活用すると楽に作成できます。
-<img src="Documents/iam_policy.png">
+<img src="Documents/iam_policy.png" width=600></img>
 
 またサンプルとして`actions`ディレクトリにIAM、EC2、S3のアクション一覧のJSONもありますので活用下さい(2022/3作成時点の一覧です)。
 - IAMアクション一覧: `actions/iam_all_actions.json`
